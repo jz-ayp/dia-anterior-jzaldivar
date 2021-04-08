@@ -1,8 +1,8 @@
 """
-Cadena de documentación.
+Obtener la fecha del día anterior (restar un día a una fecha dada).
 """
 
-from dia_siguiente import es_bisiesto, dias_del_mes
+from dia_siguiente import dias_del_mes
 
 def main():
     # Entradas
@@ -15,6 +15,7 @@ def main():
     # se trataría del último día del mes anterior.
     dia -= 1
     if dia == 0:
+        # Último día del mes anterior
         mes -= 1
         if mes == 0:
             mes = 12
